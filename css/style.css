@@ -20,13 +20,11 @@
 
 body{
     font:13px var(--text-font);
-    background: #529f0f0e;
 }
 
 header, main, footer{
     background: white;
-    padding: 0 5px;
-    margin: auto;
+    margin: 0 5px;
 }
 
 h1,h2,h3,h4,h5{
@@ -51,10 +49,16 @@ nav{
     height: 70px;
     font-size: 13px;
     font-family: var(--title-product-font);
+    font-weight: 600;
 }
 
 .nav_items{
     display: none;
+}
+
+.nav_items a:hover{
+    color: var(--green-color);
+    transition: all 300ms;
 }
 
 .logo{
@@ -114,6 +118,12 @@ nav{
     max-width: 400px;
     margin: 10px;
     position: relative;
+    overflow: hidden;
+}
+
+.product_discount:hover .image_discount{
+    transform: scale(1.1);
+    transition:all ease-in-out 800ms;
 }
 
 .product_discount img{
@@ -159,6 +169,7 @@ nav{
 
 .product_image img{
     width: 100%;
+    border: 1px solid #57575713;
 }
 
 .product_image{
@@ -174,11 +185,61 @@ nav{
     font-weight: 500;
 }
 
+.add{
+    display: none;
+    transition: all 1s ease-out 1s;
+}
+
+.product:hover .add{
+    display: block;
+}
+
+.product:hover .product_name{
+    display: none;
+}
+
+.product_actions{
+    bottom: 20px;
+    right: 20px;
+    color: black;
+    position: absolute;
+    display: none;
+    transition: all 0.4s ease-out 0s;
+}
+
+.product:hover .product_actions{
+    display: inline;
+    animation: aparecer 600ms;
+}
+
+.product_actions i{
+    background-color: #efefef;
+    font-size: 16px;
+    padding: 12px;
+    transition: all ease 400ms;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: scale(0.8) translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+}
+
+.product_actions i:hover{
+    background-color: var(--green-color);
+    color: white;
+}
+
 .product span{
     color: black;
 }
 
-.product_image div{
+.product_image .discount{
     background: var(--green-color);
     display: flex;
     align-items: center;
@@ -316,7 +377,6 @@ form{
 
 footer{
     background: #F5F5F5;
-    padding: 0;
 }
 
 .footer_container{
@@ -364,7 +424,7 @@ footer{
 @media (min-width:420px) {
 
     .container_products{
-        grid-template-columns: repeat(4, 50%);
+        grid-template-columns: repeat(4, 48%);
     }
 
     .news{
@@ -390,8 +450,7 @@ footer{
 
 @media (min-width:650px){
     header, main, footer{
-        padding: 0 10px;
-        margin: auto;
+        margin: 0 10px;
     }
 
     .container_products{
@@ -447,8 +506,9 @@ footer{
     }
     
     header, main, footer{
-        padding: 0 20px;
+        margin: 0 20px;
     }
+
     
     h1{
         font-size: 30px;
@@ -485,7 +545,7 @@ footer{
     /*--------------section 2-------------------*/
     
     .container_small{
-        height: 40vh;
+        padding: 80px 0;
     }
     
     .discount_products h2{
@@ -552,5 +612,15 @@ footer{
     
     .footer_column a{
         margin: 6px 0;
+    }
+}
+
+@media (min-width:1400px) {
+    header, main, footer{
+        margin: 0 40px;
+    }
+
+    .product_discount{
+        max-width: 600px;
     }
 }
