@@ -19,14 +19,15 @@
 }
 
 body{
-    font-family: var(--text-font);
+    font:14px var(--text-font);
+    background: #529f0f0e;
 }
 
 header, main, footer{
     width: 1024px;
+    background: white;
     padding: 0 20px;
     margin: auto;
-    border: 1px solid var(--green-color);
 }
 
 h1,h2,h3,h4,h5{
@@ -35,6 +36,7 @@ h1,h2,h3,h4,h5{
 
 h1{
     font-family: var(--title-font);
+    font-size: 30px;
 }
 
 a{
@@ -85,7 +87,7 @@ nav{
 
 /*--------------section 2-------------------*/
 
-.discount_products{
+.container_small{
     display: flex;
     height: 40vh;
     align-items: center;
@@ -131,3 +133,200 @@ nav{
 }
 
 /*--------------section 3-------------------*/
+
+.products{
+    background: url("../img/bg-1.jpg") center/cover;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.products h1, .products p, .newsletter h1{
+    margin-bottom: 15px;
+}
+
+.container_products{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.product_image img{
+    width: 100%;
+}
+
+.product_image{
+    position: relative;
+}
+
+.product{
+    margin-top: 15px;
+    text-align: left;
+    font-family: var(--title-product-font);
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.product span{
+    color: black;
+}
+
+.product_image div{
+    background: var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+}
+
+/*--------------section 4-------------------*/
+
+
+.sec_testi{
+    flex-direction: column;
+}
+
+.sec_testi h3{
+    width: 60%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sec_testi p{
+    font: 14px var(--title-product-font);
+    margin: 5px 0;
+    color: var(--gray-color);
+}
+
+.sec_testi img{
+    height: 80px;
+    width: 80px;
+}
+
+/*--------------section 5-------------------*/
+
+/*--------------section 6-------------------*/
+.newsletter{
+    background: url("../img/bg-2.jpg") center/cover;
+    flex-direction: column;
+}
+
+.newsletter input{
+    height: 40px;
+    margin-top: 20px;
+}
+
+.form_email{
+    width: 300px;
+    background: transparent;
+    border: 2px solid #959595a7;
+    padding-left: 10px;
+    margin-right:-5px;
+}
+
+.form_button{
+    color: white;
+    background-color: black;
+    padding: 0 20px;
+}
+
+/*--------------section 7-------------------*/
+
+.latest_news h1{
+    width: 168px;
+    margin:0 auto 20px;
+}
+
+.news{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    text-align: left;
+}
+
+.new img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.new span:first-of-type{
+    color: var(--green-color);
+    border-bottom: 1.8px solid var(--green-color);
+    width: 54px;
+    font-weight: bold;
+}
+
+.new span{
+    border-bottom: 1.8px solid var(--gray-color);
+    font-weight: 600;
+    font-family: var(--title-product-font);
+    font-size: 12px;
+}
+
+.new p, .new h3{
+    margin: 15px 0;
+}
+
+.new span, .new p{
+    color: var(--gray-color);
+}
+
+/*--------------section 8-------------------*/
+.brands{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*--------------Footer-------------------*/
+
+footer{
+    background: #F5F5F5;
+    padding: 0;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.footer_made{
+    background: #e6e6e6;
+    padding: 15px 0;
+}
+
+.footer_made div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer_column p{
+    margin: 4px 0;
+}
+
+.footer_column a{
+    margin: 6px 0;
+}
