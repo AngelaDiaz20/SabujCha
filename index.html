@@ -53,7 +53,54 @@
             </article>
         </section>
 
-        <section class="products">
+        <section id="modal" class="modal">
+            <div class="modal_container">
+                <div class="modal_header">
+                    <a href="#products" class="modalClose"><strong>X</strong></a> 
+                </div>
+                <div class="modal_content">
+                    <figure class="modal_picture">
+                        <img src="img/product-1.jpg" alt="Imagen de producto">
+                        <div class="modal_miniature">
+                            <img src="img/product-1.jpg" alt="Imagen de producto">
+                            <img src="img/product-7.jpg" alt="Imagen de producto">
+                            <img src="img/product-5.jpg" alt="Imagen de producto">
+                        </div>
+                    </figure>
+                    <article class="modal_product_description">
+                        <h1>Dutchman's Breeches</h1>
+                        <p><del>$162.00</del> - <span>$120.00</span></p>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                        <label for="size">Size*</label>
+                        <select name="size" id="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                        <p>Color*</p>
+                        <div class="colors">
+                            <ul>
+                                <li class="blue"></li>
+                                <li class="red"></li>
+                                <li class="pink"></li>
+                            </ul>
+                        </div>
+                        <div class="add_cart">
+                            <div class="quantity">
+                                <div>-</div>
+                                <input type="number" min="0" class="input_number" value="02">
+                                <div>+</div>
+                            </div>
+                            <input type="submit" value="ADD TO CART" class="button_add_cart">
+                        </div>
+                        <p><i class="fa-solid fa-check"></i> In stock</p>
+                    </article>  
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="products" id="products">
             <h1>Latest Products</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incidunt</p>
             <div class="container_products latest_products">
@@ -64,7 +111,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -80,7 +127,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -97,7 +144,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -113,7 +160,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -143,7 +190,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -160,7 +207,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -176,7 +223,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -193,7 +240,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -210,7 +257,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -226,7 +273,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -243,7 +290,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
@@ -259,7 +306,7 @@
                         <div class="product_actions">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#modal"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
                     <div>
