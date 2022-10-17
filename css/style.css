@@ -591,7 +591,13 @@ footer{
     .brands{
         width: 80%;
         display: flex;
-        justify-content: space-around;
+        justify-content:start;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .brands img{
+        min-width: 150px;
+        width: 100%;
     }
     
     /*--------------Footer-------------------*/
@@ -599,7 +605,7 @@ footer{
     .footer_container{
         grid-template-columns: repeat(4, 1fr);
         width: 80%;
-        padding: 40px 20px;
+        padding: 40px 0;
     }
     
     .footer_made div{
