@@ -85,6 +85,34 @@ nav{
     margin-bottom: 20px;
 }
 
+/*--------button-up---------*/
+
+.button_up a{
+    position:fixed;
+    right:40px;
+    bottom:80px;
+}
+
+.button_up a:hover{
+    background-color: var(--green-color);
+}
+
+.button_up a{
+    display: flex;
+    width: 38px;
+    height: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color);
+    color: white;
+}
+
+.button_up i:last-of-type{
+    margin-top: -8px;
+}
+
+
 /*--------------section 2-------------------*/
 
 .container_small{
