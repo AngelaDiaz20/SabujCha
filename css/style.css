@@ -240,7 +240,7 @@ nav{
     animation: aparecer 600ms;
 }
 
-.product_actions i{
+.product_actions i, .qty i{
     background-color: #efefef;
     font-size: 16px;
     padding: 12px;
@@ -258,7 +258,7 @@ nav{
     }
 }
 
-.product_actions i:hover{
+.product_actions i:hover, .qty i:hover{
     background-color: var(--green-color);
     color: white;
 }
@@ -267,7 +267,7 @@ nav{
     color: black;
 }
 
-.product_image .discount{
+.product_image .discount, .single_product_discount .discount{
     background: var(--green-color);
     display: flex;
     align-items: center;
@@ -624,7 +624,7 @@ footer{
     border-right: 1px solid #e4e2e2;
 }
 
-.input_number:focus, .modal select:focus{
+.input_number:focus, .modal select:focus, .qty input{
     outline: none;
 }
 
