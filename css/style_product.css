@@ -98,10 +98,18 @@
     display: flex;
     width: 380px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.stars span{
+    color: var(--green-color);
 }
 
 .stars{
-    color: var(--green-color);
+    color: #c3c3c3;
+    font-size: 18px;
+    font-family: var(--title-product-font);
+    font-weight: 300;
 }
 
 .container_social_media{
@@ -117,7 +125,7 @@
 }
 
 .social_media{
-    padding: 10px;
+    padding: 5px 10px;
     margin-right: 10px;
     color: white;
 }
@@ -160,27 +168,38 @@
     border-bottom: 1px solid #ebebeb;
 }
 
+.single_product_description .product_name{
+    font-family: var(--title-product-font);
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
 /*--------nav single product----------*/
+
+.description, .tags, .review{
+    grid-column:span 9;  
+}
+
+.label_description{
+    grid-column: 4/5;
+}
+
+.label{
+    margin: auto;
+    font-size: 22px;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid transparent;
+}
 
 .information_single_product{
     width: 84%;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
 }
 
-.information_single_product .nav{
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-    margin: 30px auto; 
-}
-
-.information_single_product .nav a{
-    padding-bottom: 12px;
-    border-bottom: 2px solid transparent;
-}
-
-.information_single_product .nav a:hover{
+.information_single_product .label:hover{
     color: var(--green-color);
     border-bottom: 2px solid var(--green-color);
 }
@@ -191,6 +210,23 @@
 
 .description{
     line-height: var(--line-height);
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.review, .tags, .description{
+    display: none;
+}
+
+#description:checked ~ .description, #tags:checked ~ .tags, #review:checked ~ .review{
+    display: block;
+}
+
+#description:checked ~ .label_description, #tags:checked ~ .label_tags, #review:checked ~ .label_review{
+    color: var(--green-color);
+    border-bottom: 2px solid var(--green-color);
 }
 
 /*--------------related products--------------*/
