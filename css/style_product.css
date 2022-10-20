@@ -128,6 +128,11 @@
     padding: 5px 10px;
     margin-right: 10px;
     color: white;
+    cursor: pointer;
+}
+
+.social_media:hover{
+    background: white;
 }
 
 .social_media i{
@@ -136,18 +141,38 @@
 
 .twitter{
     background: #00AAF0;
+    border: 1px solid #00AAF0;
+}
+
+.twitter:hover{
+    color: #00AAF0;
 }
 
 .facebook{
     background: #435F9F;
+    border: 1px solid #435F9F;
+}
+
+.facebook:hover{
+    color: #435F9F;
 }
 
 .google{
     background:#E04B34;
+    border: 1px solid #E04B34;
+}
+
+.google:hover{
+    color: #E04B34;
 }
 
 .pinterest{
     background: #CE1F21;
+    border: 1px solid #CE1F21;
+}
+
+.pinterest:hover{
+    color: #CE1F21;
 }
 
 .qty{
@@ -155,6 +180,10 @@
     align-items: center;
     width: 200px;
     justify-content: space-between;
+}
+
+.qty i{
+    cursor: pointer;
 }
 
 .qty input{
@@ -190,6 +219,7 @@
     padding-bottom: 12px;
     margin-bottom: 25px;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
 }
 
 .information_single_product{
