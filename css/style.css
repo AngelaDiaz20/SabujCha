@@ -138,6 +138,7 @@ nav{
     width: 90%;
     text-align: center;
     margin-bottom: 20px;
+    max-width: 280px;
 }
 
 /*--------button-up---------
@@ -407,6 +408,10 @@ form{
     transition: var(--transition) ease-out;
 }
 
+input[type=radio]{
+    display: none;
+}
+
 /*--------------section 7-------------------*/
 
 .latest_news h1{
@@ -522,8 +527,23 @@ footer{
     margin: 5px 0;
 }
 
-/*---------------Modal----------------*/
+/*------------Scrollbar modal-----------*/
 
+.modal_container::-webkit-scrollbar {
+    width: 8px;      
+}
+
+.modal_container::-webkit-scrollbar-track {
+    background: white;       
+}
+
+.modal_container::-webkit-scrollbar-thumb {
+    background-color: var(--green-color);   
+    border-radius: 10px;      
+    border: 2px solid #e4e2e2;
+}
+
+/*---------------Modal----------------*/
 .modal{
     position: fixed;
     top: 0;
@@ -611,10 +631,10 @@ footer{
     line-height: var(--line-height);
     padding: 0 10px;
     text-align: left;
-    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 10px
 }
 
 .modal_product_description i{
@@ -805,7 +825,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .new{
-        max-width: 300px;
+        width: 100%;
         margin: auto;
     }
 
@@ -953,11 +973,10 @@ input[type=number]::-webkit-outer-spin-button {
     /*--------------section 7-------------------*/
     
     .news{
-        width: 80%;
+        width: 84%;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
     }
-    
 
     /*--------------section 8-------------------*/
     .brands{
@@ -1071,17 +1090,16 @@ input[type=number]::-webkit-outer-spin-button {
 
     .modal_content{
         display: grid;
-        grid-template-columns: 40% 52%;
+        grid-template-columns: 47% 52%;
         column-gap: 20px;
         padding: 20px 60px 20px 40px;
     }
 
     .modal_product_description{
         text-align: left;
-        height: 95%;
+        height: 98%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     .modal_product_description i{
@@ -1206,6 +1224,10 @@ input[type=number]::-webkit-outer-spin-button {
 
     .products h1, .products p, .newsletter h1{
         max-width: 470px;
+    }
+
+    .news{
+        column-gap: 50px;
     }
 
 }
