@@ -27,7 +27,7 @@ body{
     color: var(--black-color);
 }
 
-header, main, footer{
+header{
     background: white;
     margin: 0 5px;
 }
@@ -61,7 +61,24 @@ nav{
     display: none;
 }
 
-.nav_items a:hover{
+.nav_items_two{
+    position: fixed;
+    display: flex;
+    background:url('../img/bg-1.jpg') #f3f3f3;
+    flex-direction: column;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.nav_items_two a{
+    padding: 10px 30px;
+    border-top: 1px solid #e1e0e0;
+}
+
+.nav_items_two a:hover, .nav_items a:hover{
     color: var(--green-color);
     transition: var(--transition);
 }
@@ -73,6 +90,37 @@ nav{
 .fa-cart-shopping{
     margin-left: 10px;
 }
+
+.bx-menu{
+    width: 27px;
+    height: 27px;
+    font-size:25px;
+    border: 1px solid var(--black-color);
+}
+
+.label_close div{
+    width: 27px;
+    height: 27px;
+    border: 1px solid var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#menu:checked ~ .label_menu{
+    display: none;
+}
+
+#menu:checked ~ .nav_items_two{
+    display: flex;
+}
+
+#menu:checked ~ .label_close div{
+    display: flex;
+}
+
+
 
 
 /*--------------section 1-------------------*/
@@ -712,6 +760,10 @@ input[type=number]::-webkit-outer-spin-button {
         width: 80%;
     }
 
+    .cart{
+        margin-right: -35%;
+    }
+
     /*.modal_product_description{
         width: 80%;
         margin: auto;
@@ -719,8 +771,32 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (min-width:650px){
-    header, main, footer{
+    header{
         margin: 0 10px;
+    }
+
+    .cart{
+        margin: 0;
+    }
+
+    .nav_items_two{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .nav_items{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        position: absolute;
+        height: 35px;
+        left: calc(50%);
     }
 
     .container_products{
@@ -780,7 +856,7 @@ input[type=number]::-webkit-outer-spin-button {
         font:14px var(--text-font);
     }
     
-    header, main, footer{
+    header{
         margin: 0 20px;
     }
 
@@ -1109,7 +1185,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 16px;
     }
 
-    header, main, footer{
+    header{
         margin: 0 40px;
     }
 
